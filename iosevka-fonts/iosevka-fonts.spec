@@ -2,8 +2,8 @@
 %global fontconf 60-%{fontname}.conf
 
 Name:           %{fontname}-fonts
-Version: 0.1.12
-Release:        2%{?dist}
+Version: 1.0beta2
+Release:        1%{?dist}
 Summary:        A programmer's typeface
 
 Group:          User Interface/X
