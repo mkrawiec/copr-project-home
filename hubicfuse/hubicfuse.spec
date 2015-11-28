@@ -1,6 +1,6 @@
 Name:           hubicfuse
 Version: 2.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A fuse filesystem to access HubiC cloud storage
 
 License:        MIT
@@ -13,6 +13,7 @@ BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(json-c)
 BuildRequires:  file-devel
+Requires:       fuse
 
 
 %description
@@ -31,11 +32,13 @@ make %{?_smp_mflags}
 
 %install
 %make_install
+install -D -m 0755 hubic_token %{buildroot}%{_bindir}/hubic_token
 
 
 %files
 %defattr(-,root,root,-)
 /usr/bin/hubicfuse
+/usr/bin/hubic_token
 %doc
 
 
