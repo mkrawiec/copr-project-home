@@ -2,7 +2,7 @@ Name:       baka-mplayer
 Summary:    The mpv based media player
 License:    GPLv2
 Group:      Applications/Multimedia
-Version: 2.0.3
+Version: 2.0.4
 Release:    1%{?dist}
 Url:        http://bakamplayer.u8sand.net/
 Source0:    %{name}-%{version}.tar.gz

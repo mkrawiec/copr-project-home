@@ -1,4 +1,4 @@
-PKG_VERSION=2.0.3
+PKG_VERSION=2.0.4
 PKG_DOWNLOAD_URL=https://github.com/u8sand/Baka-MPlayer/archive/v${PKG_VERSION}.tar.gz
 
 pkg_prebuild_hook()
