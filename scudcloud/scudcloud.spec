@@ -18,7 +18,7 @@
 
 
 Name:           scudcloud
-Version: 1.16
+Version: 1.18
 Release:        1%{?dist}
 Summary:        Non official desktop client for Slack©
 License:        MIT
