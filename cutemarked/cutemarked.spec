@@ -1,7 +1,7 @@
 Name:       cutemarked
 Summary:    Qt Markdown Editor
 License:    GPLv2
-Version: 0.11.2
+Version: 0.11.3
 Release:    1%{?dist}
 Url:        http://cloose.github.io/CuteMarkEd
 Source0:    %{name}-%{version}.tar.gz
@@ -39,8 +39,9 @@ This package provides the fontawesome iconengine plugin
 
 %build
 %{_qt5_qmake} \
+    "CONFIG += release force_debug_info" \
     lupdate=lupdate-qt5 \
-    lrelease=lrelease-qt5 \
+    lrelease=lrelease-qt5
 
 make %{?_smp_mflags}
 
@@ -69,8 +70,6 @@ xdg-icon-resource forceupdate --theme hicolor &> /dev/null
 
 %files plugin-fontawesome
 %defattr(-,root,root,-)
-%{_libdir}/qt5/plugins/iconengines/libfontawesomeicon.so
-/usr/%_lib/qt5/plugins/iconengines
-
+%{_libdir}/qt5/plugins/iconengines
 
 %changelog
