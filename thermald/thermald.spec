@@ -6,6 +6,8 @@ Release:    1%{?dist}
 Url:        https://01.org/linux-thermal-daemon
 Source0:    %{name}-%{version}.tar.gz
 
+BuildRequires: autoconf
+BuildRequires: automake
 BuildRequires: pkgconfig(glib)
 BuildRequires: pkgconfig(dbus-glib-1)
 BuildRequires: pkgconfig(libxml-2.0)

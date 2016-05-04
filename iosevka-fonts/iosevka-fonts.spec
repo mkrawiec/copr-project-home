@@ -2,7 +2,7 @@
 %global fontconf 60-%{fontname}.conf
 
 Name:           %{fontname}-fonts
-Version: 1.8.2
+Version: 1.8.3
 Release:        1%{?dist}
 Summary:        A programmer's typeface
 
