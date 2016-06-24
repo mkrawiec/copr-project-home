@@ -6,16 +6,16 @@ License:    GPLv2
 Url:        http://mp3diags.sourceforge.net/
 Source0:    %{name}-%{version}.tar.gz
 
-BuildRequires:  qt-devel 
+BuildRequires:  qt-devel
 BuildRequires:  zlib-devel
-BuildRequires:  boost-devel 
-BuildRequires:  boost-devel-static 
+BuildRequires:  boost-devel
+BuildRequires:  boost-devel-static
 BuildRequires:  gcc-c++
 
 
 %description
-Finds problems in MP3 files and helps the user to fix many of them using included tools. 
-Looks at both the audio part (VBR info, quality, normalization) and the tags containing track 
+Finds problems in MP3 files and helps the user to fix many of them using included tools.
+Looks at both the audio part (VBR info, quality, normalization) and the tags containing track
 information (ID3.) Also includes a tag editor and a file renamer.
 
 %prep
@@ -25,7 +25,7 @@ information (ID3.) Also includes a tag editor and a file renamer.
 
 %build
 pushd src
-qmake-qt4
+qmake-qt4 "QMAKE_CXXFLAGS+=-std=c++98"
 lrelease-qt4 src.pro
 %__make %{?_smp_flags}
 popd #src
