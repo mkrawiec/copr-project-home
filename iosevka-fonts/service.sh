@@ -1,4 +1,4 @@
-PKG_VERSION=1.9.1
+PKG_VERSION=1.9.3
 PKG_DOWNLOAD_URL_1=https://github.com/be5invis/Iosevka/releases/download/v${PKG_VERSION}/01.iosevka-${PKG_VERSION}.zip
 PKG_DOWNLOAD_URL_2=https://github.com/be5invis/Iosevka/releases/download/v${PKG_VERSION}/02.iosevka-term-${PKG_VERSION}.zip
 
